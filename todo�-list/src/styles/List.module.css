@@ -1,0 +1,16 @@
+.task {
+    color: rgb(235, 234, 234);
+    font-size: 1em;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+.task input[type=checkbox] {
+    width: 22px;
+	height: 20px;
+    background-color: #ccc;
+}

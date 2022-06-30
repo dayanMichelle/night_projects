@@ -1,0 +1,21 @@
+.container_card {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+.info h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.info p {
+    font-size: 0.9em;
+    margin-top: -10px;
+    color: rgb(123, 123, 123);
+}
+
+.avatar img {
+    border-radius: 50%;
+}

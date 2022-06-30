@@ -1,4 +1,4 @@
-
+import styles from '../styles/Form.module.css'
 const Form = ({setNewTask,setTasks,newTask}) => {
 
     const handleSubmit = (e) => {
@@ -7,9 +7,9 @@ const Form = ({setNewTask,setTasks,newTask}) => {
         setNewTask('')
     }
   return (
-    <form onSubmit={handleSubmit}>
-        <textarea value={newTask} onChange={(e)=>{setNewTask(e.target.value)}}></textarea>
-        <input type="submit"  name="" id="" />
+    <form className={''} onSubmit={handleSubmit}>
+        <textarea placeholder='notes...' value={newTask} onChange={(e)=>{setNewTask(e.target.value)}}></textarea>
+        <button type="submit"  name="" id=""><i class="fa-solid fa-plus"></i></button>
     </form>
   )
 }

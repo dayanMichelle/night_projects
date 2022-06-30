@@ -1,12 +1,14 @@
-
-const List = ({tasks}) => {
+import styles from "../styles/List.module.css";
+const List = ({ tasks }) => {
   return (
-    <div>My list
-        {tasks.map( task => (
-            <h1>{task}</h1>
-        ))}
+    <div >
+      {tasks.map((task) => (
+        <div className={styles.task}>
+          <input type="checkbox" /> <p>{task}</p>
+        </div>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default List
+export default List;
