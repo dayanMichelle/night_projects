@@ -4,6 +4,7 @@
     flex-direction: row;
     gap: 15px;
     justify-content: center;
+    align-items: center;
 }
 .info h1{
     font-family: 'Open Sans', sans-serif;
@@ -16,6 +17,8 @@
     color: rgb(123, 123, 123);
 }
 
-.avatar img {
+.avatar i {
     border-radius: 50%;
+    font-size: 3em;
+    color: rgb(128, 103, 212);
 }

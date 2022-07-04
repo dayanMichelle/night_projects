@@ -14,3 +14,8 @@
 	height: 20px;
     background-color: #ccc;
 }
+.cotainer_list {
+    max-height: 300px;
+    overflow: scroll;
+    
+}

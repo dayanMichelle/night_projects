@@ -4,12 +4,16 @@ import Card from "./components/Card"
 function App() {
   const [newTask, setNewTask] = useState('')
   const [tasks, setTasks] = useState([])
-  console.log(newTask)
+
+  const handleDelete = (id) => {
+    const newTaks = tasks.filter( taks => taks.id != id)
+    setTasks(newTaks)
+  }
 
   return (
     <div>
       
-      <Card setTasks={setTasks} tasks={tasks} newTask={newTask} setNewTask={setNewTask} />
+      <Card  handleDelete={handleDelete} setTasks={setTasks} tasks={tasks} newTask={newTask} setNewTask={setNewTask} />
     </div>
   )
 }

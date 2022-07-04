@@ -1,10 +1,13 @@
+import { useState } from "react";
 import styles from "../styles/List.module.css";
-const List = ({ tasks }) => {
+import Checkbox from "./Checkbox";
+const List = ({ tasks,setTasks,handleDelete }) => {
+
   return (
-    <div >
+    <div className={styles.cotainer_list}>
       {tasks.map((task) => (
-        <div className={styles.task}>
-          <input type="checkbox" /> <p>{task}</p>
+        <div key={task.id} className={styles.task}>
+          <Checkbox handleDelete={handleDelete} task={task} />
         </div>
       ))}
     </div>

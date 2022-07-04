@@ -7,7 +7,7 @@ const CardUser = () => {
         <p>Pratcice Designe Everyday</p>
       </div>
       <div className={styles.avatar}>
-        <img width='100px' src="https://marketplace.canva.com/EAEj17Y_k_k/1/0/1600w/canva-amarillo-y-negro-gamer-desgastado-imagen-de-perfil-de-twitch-ECHU3zpt238.jpg" alt="" />
+        <i class="fa-solid fa-user"></i>
       </div>
     </div>
   );

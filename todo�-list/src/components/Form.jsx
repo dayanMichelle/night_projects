@@ -3,7 +3,7 @@ const Form = ({setNewTask,setTasks,newTask}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        setTasks(prev => [...prev,newTask])
+        setTasks(prev => [...prev,{task:newTask,id:Date.now(32)}])
         setNewTask('')
     }
   return (
